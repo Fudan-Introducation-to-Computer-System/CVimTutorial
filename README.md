@@ -74,7 +74,7 @@ int main(int argc, char** argv) {
 ```
 
 另外，也可以使用指针进行访问，下一次指针会仔细讲。
-```
+```c
 #include <stdio.h>
 
 int main(int argc, char** argv) {
