@@ -73,6 +73,20 @@ int main(int argc, char** argv) {
 }
 ```
 
+另外，也可以使用指针进行访问，下一次指针会仔细讲。
+```
+#include <stdio.h>
+
+int main(int argc, char** argv) {
+    char* str = "abc";// 系统会将最后一个字符设置为0，所以实际上是 a,b,c,0
+    int idx = 0;
+    while (str[idx] != 0) {
+        printf("%c\n", str[idx++]);
+    }
+    return 0;
+}
+```
+
 ## 宏定义define和typedef
 ### 宏定义
 宏定义经常用于定义简单函数，以加快效率。但是，宏定义仅仅相当于文本替换，所以要小心其中可能存在的错误。
@@ -166,7 +180,22 @@ set autoindent
     - 之后，找到一个地方，点击Esc进入命令行模式，按p键，就会把所有的内容黏贴进去。
 
 
-## 作业
+## 练习
 使用c语言，完成以下问题：
 https://leetcode-cn.com/problems/string-to-integer-atoi/
 
+### hint
+1. char* str的访问可以通过以下方式进行访问。
+```
+    int idx = 0;
+    while(str[idx] != 0) {
+        char ch = str[idx++];
+    }
+
+```
+
+2. 可以使用宏定义
+```
+#define MAX_VALUE 2147483647
+#define MIN_VALUE -2147483648
+```
