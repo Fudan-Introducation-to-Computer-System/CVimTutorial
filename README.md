@@ -186,7 +186,7 @@ https://leetcode-cn.com/problems/string-to-integer-atoi/
 
 ### hint
 1. char* str的访问可以通过以下方式进行访问。
-```
+```C
     int idx = 0;
     while(str[idx] != 0) {
         char ch = str[idx++];
@@ -195,7 +195,7 @@ https://leetcode-cn.com/problems/string-to-integer-atoi/
 ```
 
 2. 可以使用宏定义
-```
+```C
 #define MAX_VALUE 2147483647
 #define MIN_VALUE -2147483648
 ```
