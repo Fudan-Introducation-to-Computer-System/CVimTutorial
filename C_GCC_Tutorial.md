@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
 
 ## 数组的初始化与使用
 看个例子，大家就懂了。
-```
+```C
 #include <stdio.h>
 int main(int argc, char** argv) {
     int nums[10];// 注意java里面是int[] nums = new int[10];
@@ -58,7 +58,7 @@ C中没有true和false，只有0和非0，0是false，非0是true。
 ## char数组与字符串
 对于字符串的处理，头文件在string.h中。
 参考：http://c.biancheng.net/view/337.html
-```
+```C
 #include <stdio.h>
 #include <string.h>
 
